@@ -10,6 +10,8 @@ export const siteConfig = {
   author: "Rakshith",
   siteUrl: `https://${owner}.github.io/${repo}`,
   basePath,
+  logoUrl:
+    "https://pub-4b8d052eb02f4c1b8bb10f64d495b0f3.r2.dev/2026/08/267e85de-75bf-4e57-9557-82a4dbd3b90a.png",
   profile: {
     name: "Rakshith Raj",
     role: "AI Engineer • MLOps • Full-Stack Developer",
