@@ -44,14 +44,3 @@ Post body in Markdown.
 ```
 
 The frontmatter schema lives in [`src/lib/schema.ts`](src/lib/schema.ts) — required/optional fields and defaults are defined there.
-
-## Deployment
-
-Deploys automatically via [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) on every push to `main`. One-time setup:
-
-1. On GitHub, go to the repo's **Settings → Pages**.
-2. Under **Build and deployment → Source**, select **GitHub Actions**.
-3. Push (or merge) to `main` — the workflow builds and deploys automatically.
-4. The site will be live at `https://<username>.github.io/<repo>/`.
-
-Every push to `main` re-triggers the deploy. Pull requests run [`ci.yml`](.github/workflows/ci.yml) (lint, typecheck, build) as a merge gate but don't deploy.
