@@ -12,6 +12,8 @@ export const siteConfig = {
   basePath,
   logoUrl:
     "https://pub-4b8d052eb02f4c1b8bb10f64d495b0f3.r2.dev/2026/08/267e85de-75bf-4e57-9557-82a4dbd3b90a.png",
+  ogImageUrl:
+    "https://pub-4b8d052eb02f4c1b8bb10f64d495b0f3.r2.dev/2026/08/7e90f97d-429d-4763-9832-34797de3bc89.png",
   profile: {
     name: "Rakshith Raj",
     role: "AI Engineer • MLOps • Full-Stack Developer",
