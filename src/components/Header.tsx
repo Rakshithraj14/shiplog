@@ -1,9 +1,6 @@
 import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
 
-const LOGO_URL =
-  "https://pub-4b8d052eb02f4c1b8bb10f64d495b0f3.r2.dev/2026/08/267e85de-75bf-4e57-9557-82a4dbd3b90a.png";
-
 export function Header() {
   const { github, linkedin, resume } = siteConfig.profile;
 
@@ -12,7 +9,7 @@ export function Header() {
       <div className="flex flex-wrap items-center justify-between gap-3 px-6 md:px-12 py-4">
         <Link href="/" className="flex items-center">
           {/* eslint-disable-next-line @next/next/no-img-element -- external URL, unoptimized static export */}
-          <img src={LOGO_URL} alt={siteConfig.title} width={48} height={48} />
+          <img src={siteConfig.logoUrl} alt={siteConfig.title} width={48} height={48} />
         </Link>
         <div className="flex items-center gap-3 text-sm">
           <a
