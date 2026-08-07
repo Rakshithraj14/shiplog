@@ -15,11 +15,32 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const ogImage = {
+  url: siteConfig.ogImageUrl,
+  width: 1200,
+  height: 630,
+  alt: siteConfig.title,
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.siteUrl),
   title: { default: siteConfig.title, template: `%s · ${siteConfig.title}` },
   description: siteConfig.description,
   icons: siteConfig.logoUrl,
+  openGraph: {
+    type: "website",
+    siteName: siteConfig.title,
+    title: siteConfig.title,
+    description: siteConfig.description,
+    url: siteConfig.siteUrl,
+    images: [ogImage],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteConfig.title,
+    description: siteConfig.description,
+    images: [ogImage],
+  },
 };
 
 const noFlashScript = `
