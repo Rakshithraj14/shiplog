@@ -3,6 +3,7 @@ title: "AvatarForge"
 date: "2026-09-02"
 excerpt: "A single Cloudflare Worker endpoint serving all 60+ DiceBear avatar styles same seed, same avatar, every time."
 tags: ["Backend", "Tooling"]
+coverImage: "https://pub-4b8d052eb02f4c1b8bb10f64d495b0f3.r2.dev/2026/09/9ec29a9d-ff73-44e2-9fa2-12f8f904b90d.png"
 links: [{ label: "View on GitHub", url: "https://github.com/Rakshithraj14/AvatarForge" }, { label: "View Live", url: "https://avatarforge.ravanasura1422.workers.dev/" }]
 ---
 

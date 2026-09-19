@@ -3,6 +3,7 @@ title: "pixel"
 date: "2026-09-19"
 excerpt: "A CLI that turns an AI-generated character sheet into a game-ready sprite atlas and pet.json, validated and packaged."
 tags: ["Tooling"]
+coverImage: "https://pub-4b8d052eb02f4c1b8bb10f64d495b0f3.r2.dev/2026/09/5aa04480-ad34-45bb-8d62-103bbf4fbcf8.png"
 links: [{ label: "View on GitHub", url: "https://github.com/Rakshithraj14/pixel" }]
 ---
 

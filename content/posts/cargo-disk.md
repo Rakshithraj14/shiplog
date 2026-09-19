@@ -3,6 +3,7 @@ title: "cargo-disk"
 date: "2026-09-16"
 excerpt: "A zero-dependency Cargo subcommand that shows where your target/ directory went and cleans up only what's safe to delete."
 tags: ["Tooling"]
+coverImage: "https://pub-4b8d052eb02f4c1b8bb10f64d495b0f3.r2.dev/2026/09/ba11e0f3-6b2b-4e81-aff2-13385c071976.png"
 links: [{ label: "View on GitHub", url: "https://github.com/Rakshithraj14/cargo-disk" }, { label: "View on crates.io", url: "https://crates.io/crates/cargo-disk" }]
 ---
 
