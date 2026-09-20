@@ -4,6 +4,7 @@ import { getAllSlugs, getPost } from "@/lib/posts";
 import { markdownToHtml } from "@/lib/markdown";
 import { Button } from "@/components/Button";
 import { COVER_IMAGE_POSITION_CLASS } from "@/lib/schema";
+import { siteConfig } from "@/lib/site-config";
 
 export function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
@@ -17,15 +18,25 @@ export async function generateMetadata({
   try {
     const { slug } = await params;
     const post = getPost(slug);
+    const images = [post.coverImage ?? siteConfig.ogImageUrl];
     return {
       title: post.title,
       description: post.excerpt,
+      alternates: { canonical: `/blog/${slug}/` },
       openGraph: {
         title: post.title,
         description: post.excerpt,
         type: "article",
         publishedTime: post.date,
-        images: post.coverImage ? [post.coverImage] : undefined,
+        url: `/blog/${slug}/`,
+        siteName: siteConfig.title,
+        images,
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: post.title,
+        description: post.excerpt,
+        images,
       },
     };
   } catch {
